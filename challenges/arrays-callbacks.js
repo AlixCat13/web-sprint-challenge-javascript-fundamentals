@@ -20,8 +20,8 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = zooAnimals.forEach((zooAnimals, animal_name) => {
-  return(animal_name);
+const displayNames = zooAnimals.forEach((zooAnimals, animal_name ) => {
+  return(zooAnimals.animal_name);
 });
 console.log(displayNames);
 
@@ -81,16 +81,16 @@ const consume = ((a, b, cb) => {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-const add = ((num1, num2) => {
-  return num1 + num2;
+const add = ((a, b) => {
+  return (a + b);
 });
 
-const multiply = ((num1, num2) => {
-  return num1 * num2;
+const multiply = ((a, b) => {
+  return (a * b);
 });
 
-const greeting = ((firstName, lastName) => {
-  return `Hello ${firstName} ${lastName}, nice to meet you!`
+const greeting = ((a, b) => {
+  return `Hello ${a} ${b}, nice to meet you!`
 });
 
 
