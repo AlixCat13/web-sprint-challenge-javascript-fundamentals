@@ -73,7 +73,7 @@ console.log(populationTotal);
 
 const consume = ((a, b, cb) => {
   cb(a, b);
-  return(a, b,cb);
+  return(cb(a,b));
 });
 
 
