@@ -26,7 +26,15 @@ myFunction();
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
 const summation = ((num) => {
-  return num * (num + 1) / 2;
+
+  let counter = [];
+  for (let i=1; i <= num; i++){
+   counter.push(i);   
+  } 
+  return(counter.reduce((num1, num2) => {
+    return num1 + num2 
+  },0));
+  // return num * (num + 1) / 2;
 });
 
-console.log(summation(4));
+console.log(summation(2));
